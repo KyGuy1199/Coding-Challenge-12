@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang=""en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <title>Canvas Drawing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px
+        }
+
+        .corntrols {
+            margin-bottom: 15px;
+        }
+
+        canvas {
+            border: 1px solid black;
+            display: block;
+            margin: 0 auto;
+        }
+
+        input[type="radio"] {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Canvas Drawing</h1>
+
+    <div class = "controls">
+        <label>Select Shape:</label>   
+        <input type = "radio" name = "shape" value = "line" checked> Line
+        <input type = "radio" name = "shape" value = "rectangle"> Rectangle
+        <input type = "radio" name = "shape" value = "circle"> Circle
+        
+        <label for = "colorPicker">Select Color:</label>
+        <input type = "color" id = "colorPicker" value = "#000000">
+
+        <button id = "clearCanvas">Clear Canvas</button>
+    </div>
+
+    <canvas id = "drawingCanvas" width = "800" height = "500"></canvas>
+
+    <script src = "app.js"></script>
+</body>
+</html>
